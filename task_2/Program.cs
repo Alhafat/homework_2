@@ -17,13 +17,13 @@ while (true)
     int number=int.Parse(Console.ReadLine()!);
     if (number<100)
     {
-        Console.WriteLine($"У введенного числа {number} искомая цифра отсутвсует");
+        Console.WriteLine($"У введенного числа {number} третья цифра отсутвсует");
         continue;
     }
     else
     {
         result=number/100%10;
-        Console.WriteLine($"Искомой цифрой в числе {number} является {result}");
+        Console.WriteLine($"Третьей цифрой в числе {number} является {result}");
         break;
     }
 }
