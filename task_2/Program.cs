@@ -9,7 +9,7 @@
 
 Console.Clear();
 
-Console.Write("Введите любое трехзначное число число: ");
+Console.Write("Введите любое число: ");
 int number=int.Parse(Console.ReadLine()!);
 
 if (number<100)
