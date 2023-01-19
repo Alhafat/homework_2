@@ -14,7 +14,7 @@ while (true)
 
     if ((x<=0)||(x>7)) 
     {
-        Console.WriteLine("Такого дня недели не существует"); 
+        Console.WriteLine("Такого дня недели не существует!!!"); 
         continue; 
     }
     if (x==1) Console.WriteLine("Понедельник");
