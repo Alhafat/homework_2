@@ -9,15 +9,21 @@
 
 Console.Clear();
 
-Console.Write("Введите любое число: ");
-int number=int.Parse(Console.ReadLine()!);
+int result=0;
 
-if (number<100)
+while (true)
 {
-    Console.WriteLine($"У введенного числа {number} искомая цифра отсутвсует");
-}
-else
-{
-    result=number/100%10;
-    Console.WriteLine(result);
+    Console.Write("Введите любое число: ");
+    int number=int.Parse(Console.ReadLine()!);
+    if (number<100)
+    {
+        Console.WriteLine($"У введенного числа {number} искомая цифра отсутвсует");
+        continue;
+    }
+    else
+    {
+        result=number/100%10;
+        Console.WriteLine($"Искомой цифрой в числе {number} является {result}");
+        break;
+    }
 }
